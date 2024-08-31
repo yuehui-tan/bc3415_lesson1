@@ -3,7 +3,7 @@ import google.generativeai as palm
 import os
 
 
-makersuite_api= api = os.getenv("API_KEY") 
+makersuite_api= os.getenv("API_KEY") 
 palm.configure(api_key = makersuite_api)
 model = {"model": "models/text-bison-001"}
 
