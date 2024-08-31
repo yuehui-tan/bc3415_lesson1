@@ -1,9 +1,79 @@
-<!-- <img src="robo-image.jpg" width="320" height="240"> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robo Advisor</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f4f8;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
 
-<h2>Welcome to Robo Advisor</h2>
-<form action="/makersuite" method = 'post'>
-    <input type="submit" value ="q">
-</form>
-<form action="/prediction" method = 'post'>
-    <input type="submit" value = 'Prediction'>
-</form>
+        .container {
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            max-width: 400px;
+            width: 100%;
+        }
+
+        img {
+            border-radius: 10px;
+            width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #4a90e2;
+        }
+
+        form {
+            margin-bottom: 10px;
+        }
+
+        input[type="submit"] {
+            background-color: #4a90e2;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #357ab8;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://img.freepik.com/free-photo/cartoon-ai-robot-scene_23-2151675020.jpg?size=626&ext=jpg&ga=GA1.1.310255802.1721833624&semt=ais_hybrid" alt="AI Robot">
+        <h2>Welcome to Financial Robo Advisor!</h2>
+        <form action="/ai_agent" method="post">
+            <input type="submit" value="AI Agent">
+        </form>
+        <form action="/joke" method="post">
+            <input type="submit" value = "Joke of the Day">
+        </form>
+        <form action="/prediction" method="post">
+            <input type="submit" value="Prediction">
+        </form>
+
+    </div>
+</body>
+</html>
