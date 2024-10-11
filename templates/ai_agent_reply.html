@@ -1,6 +1,65 @@
-<h2>Reply</h2>
-<h4>{{r}}</h4>
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static',filename='styles.css')}}">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f2f2f2;
+        }
+        .container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 90%;
+            max-width: 400px;
+        }
+        h2 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #333;
+            text-align: center;
+        }
+        h4 {
+            font-size: 18px;
+            margin-bottom: 20px;
+            color: #555;
+            text-align: center;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            font-size: 16px;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            width: 100%; /* Make the button take up the full width */
+            max-width: 350px; /* Set a maximum width for larger screens */
+            display: block;
+            margin: 0 auto;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        form {
+            text-align: center;
+        }
+    </style>
+</head>
 
-<form action="/" method="post">
-    <input type="submit" value="Main">
-</form>
+<body>
+    <div class="container">
+        <form action="/" method="post">
+            <h2>Reply:</h2>
+            <h4>{{r}}</h4>
+            <input type="submit" value="Main">
+        </form>
+    </div>
+</body>
