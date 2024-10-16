@@ -17,7 +17,11 @@
             border-radius: 12px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
             width: 90%;
-            max-width: 400px;
+            max-width: 600px; /* Wider max-width */
+            min-width: 300px;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+            line-height: 1.6; /* Increase line height for better readability */
         }
         h2 {
             font-size: 22px;
@@ -25,11 +29,12 @@
             color: #333;
             text-align: center;
         }
-        h4 {
+        p {
             font-size: 18px;
-            margin-bottom: 20px;
             color: #555;
-            text-align: center;
+            text-align: left; /* Align text to the left */
+            margin-bottom: 20px;
+            white-space: pre-wrap; /* Respect line breaks in content */
         }
         input[type="submit"] {
             background-color: #4CAF50;
@@ -40,8 +45,8 @@
             border-radius: 6px;
             cursor: pointer;
             transition: background-color 0.3s ease;
-            width: 100%; /* Make the button take up the full width */
-            max-width: 350px; /* Set a maximum width for larger screens */
+            width: 100%;
+            max-width: 350px;
             display: block;
             margin: 0 auto;
         }
@@ -58,7 +63,7 @@
     <div class="container">
         <form action="/" method="post">
             <h2>Reply:</h2>
-            <h4>{{r}}</h4>
+            <p>{{r}}</p> <!-- Changed h4 to p for body text -->
             <input type="submit" value="Main">
         </form>
     </div>
