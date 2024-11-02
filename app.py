@@ -45,7 +45,11 @@ def SAR():
     r = TextBlob(q).sentiment
     return(render_template("SAR.html", r = r))
 
-
+#Transfer Money
+@app.route("/TM", methods = ['GET', 'POST'])
+def TM():
+    return(render_template("TM.html"))
+    
 @app.route("/prediction",methods=["GET","POST"])
 def prediction():
     return(render_template("index.html"))
